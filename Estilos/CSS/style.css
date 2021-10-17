@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+/*Index*/
+nav a {
+    color: crimson;
+}
+
+.tituloc {
+    color: rgb(38, 9, 224);
+}
+
+table {
+    border-color: indigo;
+}
+
+table td {
+    font-style: italic;
+}
+
+#departamentos {
+    color: firebrick;
+    text-align: center;
+    word-spacing: 10rem;
+}
+
+div h3 {
+    color: rgb(82, 80, 47);
+    text-align: right;
+    line-height: 3rem;
+
+}
+
+.buscar {
+    color: white;
+    font-family: monospace;
+    font-size:x-large;
+    text-align: center;
+}
+
+footer {
+    color: black;
+    font-size: 3ex;
+}
+.fontGrande {
+    font-weight: 600;
+    font-size: 1,5rem;
+}
+.bordesRed {
+    border-radius: 50px;
+}
+
+.imgChica {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+
+.buscarSitio {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#alinDerecha {
+    text-align: right;
+    word-spacing: 10rem;
+}
+
+#fuenteHead {
+    font-family: 'Glory', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fondoHead {
+    display: grid;
+    background-image: url(https://s1.1zoom.me/big0/526/Sky_Pools_Rays_of_light_Clouds_573483_1280x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.colorSubTitle {
+    color: chocolate;
+    font-size: 2rem;
+}
+
+
+
+.formatGalery {
+    border-color: rgb(14, 8, 103);
+    border-style: solid;
+    height: 250px;
+    width: 250px;
+}
+
+.margenPhoto {
+    margin: 25px 50px 25px 50px;
+    padding: 25px 30px 25px 30px;
+    background-color: rgb(88, 155, 255);
+}
+.conImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+h1 {
+    display: inline-block;
+}
+
+.floatRight {
+    float: right;
+    flood-opacity: inherit;
+}
+
+.padLeft {
+    padding-left: 25px;
+}
+
+.nav ul {
+    list-style: none;
+}
+*,::after,::before{
+    box-sizing:unset;
+}
+.menu>li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu>li>a {
+    display: flex;
+    padding: 5px 5px;
+    text-decoration: rgb(252, 34, 0);
+    color: blue;
+    background-color:rgba(186, 207, 218, 0.79);
+    border-radius: 15px;
+    border-style:dashed;
+    font-style: oblique;
+    width: 100px;
+    text-align: center;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.menu li a:hover {
+    color: rgb(239, 0, 231);
+    font-style:normal;
+    padding: 20px;
+    font-size: 20px;
+    overflow:hidden;
+}
+
+.subMenu {
+    position: absolute;
+    background-color: rgb(70, 200, 243);
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    display: none;
+}
+
+.subMenu li {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    color: red;
+    text-align: center;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu li:hover .subMenu {
+    display: block;
+}
+
+.setBox {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    padding-bottom: 3vh;
+}
+.tab-col:hover {
+color: white;
+background: firebrick;
+background-color: rgb(14, 8, 103);
+font-size: x-large;
+font-weight: 800;
+}
+
+/* se aplica flex*/
+.navFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+#padUl {
+    padding-inline-start: 0px;
+}
+
+.marSet {
+    margin: 0;
+}
+.posText {
+    position: relative;
+}
+.imgFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: stretch;
+    justify-items: stretch;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+
+}
+
+.photoCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.img {
+    margin: 55px;
+    padding: 10px;
+    border: 3px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.footPos {
+    width: 100%;
+}
+/*Gradiante*/
+.tab-col {
+    background-image: linear-gradient(180deg, #5e6cb3 20%, #13ebc3 80%);
+    border: outset;
+    border: 8px;
+    padding: 8px;
+    color: rgb(7, 7, 7);
+   }
+
+#fondoColor {
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff 9%, #5e6cb3 28%, #74EBD5 58%, #ffffff 93%);
+    /*
+    background-color: #5e6cb3;
+    background-image: linear-gradient(180deg, #5e6cb3 0%, #74EBD5 48%, #ffffff 87%);
+    */
+}
+
+/* APLICANDO GRID*/
+
+.bodyGrid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#mainGrid {
+    display: grid;
+    grid-template-areas:
+        "tr tr tr tr"
+        "img img img img"
+        "img img img img"
+        "img img img img";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% repeat(3, 30%);
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.borderGrid {
+    border: 1px solid rgb(41, 231, 219);
+    gap: 5px;
+}
+
+#mainGrid.imag {
+    grid-area: img;
+}
+
+#mainGrid>h2 {
+    grid-area: tr;
+}
+
+.bannerGrid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    justify-content: stretch;
+    align-content: stretch;
+    align-items: end;
+    overflow: hidden;
+}
+
+.navGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: end;
+    overflow: hidden;
+}
+
+#footerAll {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#mainIndex {
+    display: grid;
+    grid-template-areas:
+        "log log log log misi"
+        "p1 p2 p3 p4 misi"
+        "imgt imgt imgt imgt visi"
+        "imgt imgt imgt imgt visi";
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 8rem 5rem 25rem 11rem;
+    justify-items: stretch;
+    align-items: stretch;
+  
+}
+main >section>div>div>div>img{
+    max-height: 36rem;
+}
+.log {
+    grid-area: log;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+.imgt {
+    grid-area: imgt;
+}
+
+.misi {
+    grid-area: misi;
+}
+
+.visi {
+    grid-area: visi;
+}
+/*DESACTIVADO
+.visi:hover:before {
+    content: "Nuestra visión es llegar a ser la princpal empresa en Chile en revestimieto de piscinas en fibra de vidrio, teniendo altos estandares de calidad y con la satisfacción de nuestros clientes.";
+    text-align: justify;
+    justify-content: stretch;
+    color: blue;  
+}
+.misi:hover:before {
+    content: "Nuestra misión es contribuir a la recreación de las familias, con servicios de calidad.";
+    text-align: justify;
+    justify-content: stretch;
+    color: blue;  
+}*/
+      
+.imgLogo {
+    justify-self: stretch;
+}
+.menuP>p {
+    display: grid;
+    padding: 5px 5px;
+    color: blue;
+    background-color:rgba(186, 207, 218, 0);
+    border-style:dashed;
+    border: 2px solid blue;
+    font-style: oblique;
+    justify-content: stretch;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    text-align: center;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;  
+}
+
+.fondoBlue {
+    background-color: blue;
+}
+
+.menuP p:hover {
+    color: rgb(239, 0, 231);
+    font-style:normal;
+    padding: 20px;
+    font-size: 20px;
+    overflow:hidden;
+}
+.sectionGrid {
+    display: grid;
+    grid-template-areas:
+        "tit tit"
+        "tab tab"
+        "vi1 vi2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+.tit {
+    grid-area: tit;
+}
+.tab {
+    grid-area: tab;
+    justify-self: stretch;
+    margin: auto 10px;
+    padding-bottom: 0px;
+}
+.vi1 {
+    grid-area: vi1;
+}
+.vi2 {
+    grid-area: vi2;
+}
+/*Pestaña Proveedores*/
+.estiloProv {
+    border-color: blue;
+    border-style: solid;
+    background-color: rgb(153, 236, 221);
+}
+.listProv {
+    color: navy;
+    list-style-position: inside;
+}
+.allProv1 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.allProv2 {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.allProv3 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.bProv {
+    border-style: double;
+    border-color: darkblue;
+    padding: 40px;
+
+}
+#imgProv {
+    animation-name: resaltar;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    animation-delay: 1s;
+  
+}
+.animaProv{
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+/*Pestaña Colaboradores*/
+.sectionGrid-col {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+.tit {
+    grid-area: tit;
+}
+.movCol:hover{
+    border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    }
+    
+/*Pestaña Clientes*/
+.mainCliente {
+    display: grid;
+    grid-template-areas: 
+    "titl titl titl"
+    "cli1 cli2 cli3"
+    "inf1 inf2 inf3"
+    "cli4 cli5 cli6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch;
+    gap: 35px;
+}
+.titl {
+    grid-area: titl;
+}
+.cli1 {
+    grid-area: cli1;
+}
+.cli2 {
+    grid-area: cli2;
+}
+.cli3 {
+    grid-area: cli3;
+}
+.cli4 {
+    grid-area: cli4;
+}
+.cli5 {
+    grid-area: cli5;
+}
+.cli6 {
+    grid-area: cli6;
+}
+.mainCliente >h3>img{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 70% ;
+    min-width: 70% ;
+  }
+.mainCliente >h3>p {
+    margin: 0px 8px;
+    text-align: justify;
+    border: 0px 3px 3px 3px;
+    font-style: italic;
+}
+.animaPri{
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+.imgClie {
+    animation-name: resaltar;
+    animation-duration: 2s;
+    animation-iteration-count:initial;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    border: 1px solid black;
+    box-shadow: 0 px 6px 2px black;
+
+}
+
+/*Animaciones, Transiciones y Transformaciones*/
+header>a>h3 {
+    transform: scale(1.5,1.5);
+    transform: skew(-10deg,-5deg);
+
+    
+}
+
+@keyframes aparecer{
+    50%{opacity: 0;}
+    50%{opacity: 1;}
+    50%{color: blue;}
+    50%{font-size: xx-large;}
+    100%{font-weight: 900;}
+}
+@keyframes resaltar{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* Media Query*/
+@media only screen and (max-width: 480px) {
+
+    #mainIndex {
+        display: grid;
+        grid-template-areas:
+            "log log"
+            "p1 p2"
+            "p3 p4"
+            "misi visi"
+            "imgt imgt"
+            "imgt imgt";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 8rem 5rem 5rem 5rem 5.5rem 4.1rem;
+        justify-items: stretch;
+        align-items: stretch;
+      
+    }
+    main >section>div>div>div>img{
+        max-height: 9,6rem;
+    }
+    .log {
+        grid-area: log;
+    }
+    
+    .p1 {
+        grid-area: p1;
+    }
+    
+    .p2 {
+        grid-area: p2;
+    }
+    
+    .p3 {
+        grid-area: p3;
+    }
+    
+    .p4 {
+        grid-area: p4;
+    }
+    
+    .imgt {
+        grid-area: imgt;
+    }
+    
+    .misi {
+        grid-area: misi;
+    }
+    
+    .visi {
+        grid-area: visi;
+    }
+    .sectionGrid {
+        display: grid;
+        grid-template-areas:
+            "tit"
+            "tab"
+            "vi1"
+            "vi2";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+    }
+    .tit {
+        grid-area: tit;
+    }
+    .tab {
+        grid-area: tab;
+        justify-self: stretch;
+        margin: auto 10px;
+        padding-bottom: 0px;
+    }
+    .vi1 {
+        grid-area: vi1;
+    }
+    .vi2 {
+        grid-area: vi2;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+
+    .bannerGrid {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 100%;
+        justify-content: right;
+        align-content: right;
+        align-items: right;
+    }
+
+    .navGrid {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 50% 50%;
+        align-items: right;
+        justify-items: right;
+        overflow: hidden;
+    }
+}
+

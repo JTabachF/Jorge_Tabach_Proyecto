@@ -1,0 +1,11 @@
+@keyframes aparecer{
+    50%{opacity: 0;}
+    50%{opacity: 1;}
+    50%{color: blue;}
+    50%{font-size: xx-large;}
+    100%{font-weight: 900;}
+}
+@keyframes resaltar{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

@@ -1,0 +1,513 @@
+@import "../Parciales/global";
+@import "../parciales/variables";
+@import "../Parciales/animaciones";
+@import "../Parciales/responsive";
+
+/*CLASES GLOBALES*/
+.tituloInicial {
+    text-align: center;
+    margin-top: $margenTit;
+    margin-bottom: 10px;
+    color: blue;
+    font-size: 2rem;
+    font-weight: 800;
+
+    &:hover {
+        color: rgb(239, 0, 231);
+        overflow: hidden;
+    }
+}
+.colorGeneral {
+    background-color: $azulPrincipal!important;
+    opacity: 0.9;
+}
+
+//INDEX
+
+/*SECCIÓN CAROUESEL*/
+.secPrincipal {
+    max-height: 100vh;
+    overflow: hidden;
+}
+// SECCIÓN TARJETAS
+.secMedia {
+    box-shadow: 0 2px 6px 2px rgba(2, 2, 255, 0.728);
+    &__img {
+        max-height: 10vh;
+        max-width: 5vw;
+        overflow: hidden;
+        margin-left: 5px;
+    }
+    &:hover {
+        color: #0d6efd;
+        font-weight: 600;
+        font-style: normal;
+        overflow: hidden;
+    }     
+}
+
+/* BUSCADOR INTERNO INDEX*/
+.buscarInterno {
+    background-color: $azulPrincipal;
+    border-color: #0d6efd;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+
+    &__sec {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &__buscar {
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+/*Sección tabla y videos index*/
+.secFinal {
+    display: grid;
+    grid-template-areas:
+        "tit tit"
+        "tab tab"
+        "vi1 vi2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+
+    &__tit {
+        grid-area: tit;
+    }
+
+    &__tab {
+        grid-area: tab;
+        justify-self: stretch;
+        margin: auto 10px;
+        padding-bottom: 0px;
+
+        &__estilo {
+            background-image: linear-gradient(180deg, #5e6cb3 20%, #13ebc3 80%);
+            border: outset;
+            border: 8px;
+            padding: 8px;
+            color: rgb(7, 7, 7);
+            font-style: italic;
+
+            &:hover {
+                color: white;
+                background: firebrick;
+                background-color: rgb(14, 8, 103);
+                font-size: x-large;
+                font-weight: 800;
+            }
+        } 
+    }
+
+    &__vi1 {
+        grid-area: vi1;
+        margin: 2rem;
+    }
+
+    &__vi2 {
+        grid-area: vi2;
+        margin: 2rem;
+    }
+
+    @include tablet  {
+        display: grid;
+        grid-template-areas:
+            "tit"
+            "tab"
+            "vi1"
+            "vi2";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        &__tit {
+            grid-area: tit;
+        }
+    
+        &__tab {
+            grid-area: tab;
+            justify-self: stretch;
+            margin: auto 10px;
+            padding-bottom: 0px;
+    
+            &__estilo {
+                background-image: linear-gradient(180deg, #5e6cb3 20%, #13ebc3 80%);
+                border: outset;
+                border: 8px;
+                padding: 8px;
+                color: rgb(7, 7, 7);
+                font-style: italic;
+    
+                &:hover {
+                    color: white;
+                    background: firebrick;
+                    background-color: rgb(14, 8, 103);
+                    font-size: large;
+                    font-weight: 600;
+                }
+            } 
+        }
+    
+        &__vi1 {
+            grid-area: vi1;
+            margin: 2rem;
+        }
+    
+        &__vi2 {
+            grid-area: vi2;
+            margin: 2rem;
+        }
+    }
+    @include movil  {
+        display: grid;
+        grid-template-areas:
+            "tit"
+            "tab"
+            "vi1"
+            "vi2";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        &__tit {
+            grid-area: tit;
+        }
+    
+        &__tab {
+            grid-area: tab;
+            justify-self: stretch;
+            margin: auto 10px;
+            padding-bottom: 0px;
+    
+            &__estilo {
+                background-image: linear-gradient(180deg, #5e6cb3 20%, #13ebc3 80%);
+                border: outset;
+                border: 8px;
+                padding: 8px;
+                color: rgb(7, 7, 7);
+                font-style: italic;
+    
+                &:hover {
+                    color: white;
+                    background: firebrick;
+                    background-color: rgb(14, 8, 103);
+                    font-size:larger;
+                    font-weight: 400;
+                }
+            } 
+        }
+    
+        &__vi1 {
+            grid-area: vi1;
+            margin: 2rem;
+        }
+    
+        &__vi2 {
+            grid-area: vi2;
+            margin: 2rem;
+        }
+    }
+}
+
+/* PESTAÑA PROVEEDORES*/
+@mixin proveedores {
+    display: flex;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: oblique;
+    justify-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0rem;
+}
+@mixin estiloP {
+    border-style: double;
+    padding: 40px;
+    margin-bottom: 0px;
+    box-shadow: 10px 5px 10px 10px rgba(85, 201, 255, 0.811);
+    border: 9px solid rgb(22, 37, 206);
+    border-style:double;
+}
+
+@mixin animacionProv {
+    height: 8rem;
+    width: 22rem;
+    animation-name: resaltar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+.prov1 {
+    @include proveedores;
+    justify-content: flex-end;
+    &__estilo {
+        @include estiloP();
+        &__listProv {
+            color: navy;
+            list-style-position: inside;
+        }
+        &__imgProv {
+            @include animacionProv();
+        }
+    }
+    @include menor {
+        @include proveedores;
+        justify-content: flex-start;
+    }
+}
+
+.prov2 {
+    @include proveedores;
+    justify-content: flex-start;
+    &__estilo {
+        @include estiloP();
+
+        &__listProv {
+            color: navy;
+            list-style-position: inside;
+        }
+
+        &__imgProv {
+            @include animacionProv();
+        }
+    }
+}
+
+.prov3 {
+    @include proveedores;
+    justify-content: flex-end;
+
+    &__estilo {
+        @include estiloP();
+        &__listProv {
+            color: navy;
+            list-style-position: inside;
+        }
+
+        &__imgProv {
+            @include animacionProv();
+        }
+    }
+    @include menor {
+        @include proveedores;
+        justify-content: flex-start;
+    }
+}
+
+/*PESTAÑA CONTACTO*/
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+
+    &__bordes {
+        border: 3px solid blue;
+    }
+
+    &__estilo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        margin: 3px;
+        padding: 10px;
+
+        &--activo {
+            margin: 3px;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
+/*PESTAÑA GALERÍA*/
+.galeria {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: auto;
+}
+@each $piscina in img1, img2, img3, img4, img5, img6, img7, img8, img9 {
+    .#{$piscina}-fibra {
+        background-image: url(/resources/#{$piscina}.jpeg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 2px 20px 20px 2px rgba(42, 155, 208, 0.811);
+        border: 1px solid rgb(92, 86, 126);
+        height: 40vh;
+        margin-left: 15px;
+    }
+    .#{$piscina}-fibra:hover {
+        opacity: 0.8;
+        filter:brightness(8px);
+        box-shadow: 2px 20px 20px 2px rgba(42, 155, 208, 0.557);
+    }
+}
+.card-title {
+    color: blue;
+}
+.card-title:hover {
+    color: rgb(239, 0, 231);
+    overflow: hidden;
+}
+/*PESTAÑA CLIENTES*/
+@mixin estilo {
+    animation-name: resaltar;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    border: 1px solid black;
+    box-shadow: 0 2px 6px 2px black;
+    margin: 3rem 0rem;
+}
+
+.gridClientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch;
+    gap: 35px;
+    padding-top: 2rem;
+
+    &__tarjeta1 {
+        @include estilo;
+    }
+
+    &__tarjeta2 {
+        @include estilo;
+    }
+
+    &__tarjeta3 {
+        @include estilo;
+    }
+
+    &__tarjeta4 {
+        @include estilo;
+    }
+
+    &__tarjeta5 {
+        @include estilo;
+    }
+
+    @include menor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: stretch;
+        justify-content: stretch;
+        align-content: stretch;
+        gap: 35px;
+        padding-top: 2rem;
+        &__tarjeta1 {
+            @include estilo;
+        }
+    
+        &__tarjeta2 {
+            @include estilo;
+        }
+    
+        &__tarjeta3 {
+            @include estilo;
+        }
+    
+        &__tarjeta4 {
+            @include estilo;
+        }
+    
+        &__tarjeta5 {
+            @include estilo;
+        }
+    } 
+}
+/*COLABORADORES*/
+@mixin colaboradores {
+    animation-name: resaltar;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    border: 1px solid black;
+    box-shadow: 0 2px 6px 2px black;
+    margin: 3rem 0rem;
+}
+@mixin hover {
+    border-radius:10%;
+    box-shadow: 0px 0px 15px 15px #89ddf4;
+    transform: rotate(360deg);
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.secColab {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 35px;
+    padding-top: 2rem;
+    &__tarjeta1 {
+        margin-top: $margenTit;
+        border: 1px solid black;
+        box-shadow: 0 2px 6px 2px black;
+        &__img {
+            @include colaboradores;
+        }
+        &__img:hover {
+            @include hover;
+        }
+    }
+
+    &__tarjeta2 {
+        margin-top: $margenTit;
+        border: 1px solid black;
+        box-shadow: 0 2px 6px 2px black;
+        &__img {
+            @include colaboradores;
+        }
+        &__img:hover {
+            @include hover;
+        }
+    }
+
+    &__tarjeta3 {
+        margin-top: $margenTit;
+        border: 1px solid black;
+        box-shadow: 0 2px 6px 2px black;
+        &__img {
+            @include colaboradores;
+        }
+        &__img:hover {
+            @include hover;
+        }
+    }
+    &__tarjeta4 {
+        margin-top: $margenTit;
+        border: 1px solid black;
+        box-shadow: 0 2px 6px 2px black;
+        &__img {
+            @include colaboradores;
+        }
+        &__img:hover {
+            @include hover;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import "../Parciales/responsive";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, footer {
+	background-image:url(/resources/fondo.png);
+	background-size: cover;
+}

@@ -1,0 +1,51 @@
+/* TIPOGRAFÍA*/
+/*tipografía responsive*/
+//Delimitaci´n escala de fuente
+$font-lock-min: 768px !default;
+$font-lock-max: 1024px !default;
+
+//declaración de mixin//
+@mixin font-size (
+    $min, //local
+    $max: null, //local
+    $lock-min: $font-lock-min, //local
+    $lock-max: $font-lock-max //local
+) {
+    & {font-size: $min;}
+    @if $max {
+        @media (min-width: $lock-min) and (max-width: $lock-max) {
+            &{
+                font-size: calc(
+                    #{$min}+
+                    #{num($max) - num($min)}*
+                    (100vw - #{$lock-min})/
+                    #{num($lock-max) - num($lock-min)}
+                );
+            }
+        }
+        @media (min-width: $lock-max) {
+            &{font-size: $max;}
+        }
+    }   
+}
+
+/*CONTENIDO RESPONSIVE*/
+@mixin movil {
+    @media only screen and (max-width: 480px) {
+        @content;
+        
+    }  
+}
+@mixin tablet {
+    @media (min-width:480px) and (max-width:768px) {
+        @content;
+        
+    }  
+}
+
+@mixin menor {
+    @media only screen and (max-width: 760px) {
+        @content;
+        
+    }  
+}
