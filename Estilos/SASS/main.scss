@@ -342,7 +342,7 @@
 }
 @each $piscina in img1, img2, img3, img4, img5, img6, img7, img8, img9 {
     .#{$piscina}-fibra {
-        background-image: url(resources/#{$piscina}.jpeg);
+        background-image: url(/resources/#{$piscina}.jpeg);
         background-size: cover;
         background-position: center;
         box-shadow: 2px 20px 20px 2px rgba(42, 155, 208, 0.811);
