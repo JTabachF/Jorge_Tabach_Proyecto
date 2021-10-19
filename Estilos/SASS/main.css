@@ -10,7 +10,7 @@
 }
 
 body, footer {
-  background: url(/resources/fondo.png);
+  background: url(resources/fondo.png);
   background-size: cover;
 }
 
