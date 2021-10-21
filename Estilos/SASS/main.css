@@ -96,6 +96,20 @@ body, footer {
   opacity: 0.9;
 }
 
+.footerSet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1fr 1fr;
+          column-gap: 1fr 1fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*SECCIÓN CAROUESEL*/
 .secPrincipal {
   max-height: 100vh;

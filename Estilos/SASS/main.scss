@@ -22,7 +22,12 @@
     background-color: $azulPrincipal!important;
     opacity: 0.9;
 }
-
+.footerSet {
+    display: flex;
+    column-gap: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
 //INDEX
 
 /*SECCIÓN CAROUESEL*/
