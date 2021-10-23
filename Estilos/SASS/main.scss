@@ -229,6 +229,50 @@
 }
 
 /* PESTAÑA PROVEEDORES*/
+@mixin animacionProv {
+    animation-name: zoom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-delay: 1s;
+}
+@mixin provee {
+    opacity: 0.9;
+    background-color: rgb(232, 248, 254);
+    overflow-x: hidden;
+    box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
+}
+.provSet1 {
+    @include provee ();
+    margin-left: 2vw;
+    margin-right: 20vw;
+    &__img {
+        object-fit:scale-down;
+        max-height: 40vh;
+        @include animacionProv();
+    }
+}
+.provSet2 {
+    @include provee ();
+    margin-left: 11vw;
+    margin-right:11vw;
+    &__img {
+        object-fit:scale-down;
+        max-height: 40vh;
+        @include animacionProv();
+    }
+}
+.provSet3 {
+    @include provee ();
+    margin-left: 20vw;
+    margin-right: 2vw;
+    &__img {
+        object-fit:scale-down;
+        max-height: 40vh;
+        @include animacionProv();
+    }
+}
+/*
 @mixin proveedores {
     display: flex;
     font-family: 'Glory', sans-serif;
@@ -315,7 +359,7 @@
         @include proveedores;
         justify-content: flex-start;
     }
-}
+}*/
 
 /*PESTAÑA CONTACTO*/
 .contactoIMG {

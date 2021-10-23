@@ -9,3 +9,14 @@
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
+@keyframes zoom{
+0% {
+    transform: scale(1, 1);
+    }
+    50% {
+    transform: scale(2, 2);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+}
