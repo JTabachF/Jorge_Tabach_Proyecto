@@ -239,6 +239,16 @@ body, footer {
 .secText {
   background-color: rgba(245, 245, 245, 0.598);
   color: darkblue;
+  -webkit-animation-name: zoomS;
+          animation-name: zoomS;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .secMedia {

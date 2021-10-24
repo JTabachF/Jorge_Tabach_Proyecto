@@ -33,6 +33,11 @@
 .secText {
     background-color: rgba(245, 245, 245, 0.598);
     color: darkblue;
+    animation-name: zoomS;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-delay: 1s;
 }
 // SECCIÓN TARJETAS
 .secMedia {
