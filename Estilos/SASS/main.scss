@@ -244,6 +244,13 @@
     animation-timing-function:ease-in-out;
     animation-delay: 1s;
 }
+@mixin animacionProv2 {
+    animation-name: zoomS;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-delay: 1s;
+}
 @mixin provee {
     opacity: 0.9;
     background-color: rgb(232, 248, 254);
@@ -258,6 +265,16 @@
         object-fit:scale-down;
         max-height: 40vh;
         @include animacionProv();
+        @include tablet  {
+            object-fit:scale-down;
+            max-height: 40vh;
+            @include animacionProv2();
+        }
+        @include movil  {
+            object-fit:scale-down;
+            max-height: 40vh;
+            @include animacionProv2();
+        }
     }
 }
 .provSet2 {
@@ -268,6 +285,16 @@
         object-fit:scale-down;
         max-height: 40vh;
         @include animacionProv();
+        @include tablet  {
+            object-fit:scale-down;
+            max-height: 40vh;
+            @include animacionProv2();
+        }
+        @include movil  {
+            object-fit:scale-down;
+            max-height: 40vh;
+            @include animacionProv2();
+        }
     }
 }
 .provSet3 {
@@ -278,6 +305,16 @@
         object-fit:scale-down;
         max-height: 40vh;
         @include animacionProv();
+        @include tablet  {
+            object-fit:scale-down;
+            max-height: 40vh;
+            @include animacionProv2();
+        }
+        @include movil  {
+            object-fit:scale-down;
+            max-height: 40vh;
+            @include animacionProv2();
+        }
     }
 }
 /*
@@ -394,15 +431,18 @@
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: auto;
+    overflow-x: hidden;
     @include tablet  {
         display: grid;
         grid-template-columns: 98%;
         grid-template-rows: auto;
+        overflow-x: hidden;
     }
     @include movil  {
         display: grid;
         grid-template-columns: 98%;
         grid-template-rows: auto;
+        overflow-x: hidden;
     }
 }
 @each $piscina in img1, img2, img3, img4, img5, img6, img7, img8, img9 {
