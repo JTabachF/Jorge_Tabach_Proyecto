@@ -337,6 +337,7 @@ body, footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow-x: hidden;
   }
   .secFinal__tit {
     -ms-grid-row: 1;
@@ -395,6 +396,7 @@ body, footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow-x: hidden;
   }
   .secFinal__tit {
     -ms-grid-row: 1;
@@ -431,12 +433,18 @@ body, footer {
     -ms-grid-column: 1;
     grid-area: vi1;
     margin: 2rem;
+    max-height: 80vh;
+    max-width: 80vw;
+    overflow: hidden;
   }
   .secFinal__vi2 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: vi2;
     margin: 2rem;
+    max-height: 80vh;
+    max-width: 80vw;
+    overflow: hidden;
   }
 }
 
@@ -645,6 +653,28 @@ body, footer {
       grid-template-columns: 32% 32% 32%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
 }
 
 .img1-fibra {
@@ -952,6 +982,7 @@ body, footer {
         align-content: stretch;
     gap: 35px;
     padding-top: 2rem;
+    overflow-x: hidden;
   }
   .gridClientes__tarjeta1 {
     -webkit-animation-name: resaltar;
@@ -1193,5 +1224,29 @@ body, footer {
           transform: rotateY(180deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .secColab {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .secColab {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    overflow-x: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */

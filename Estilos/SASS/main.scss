@@ -139,6 +139,7 @@
         grid-template-rows: auto;
         justify-items: center;
         align-items: center;
+        overflow-x: hidden;
         &__tit {
             grid-area: tit;
         }
@@ -188,6 +189,7 @@
         grid-template-rows: auto;
         justify-items: center;
         align-items: center;
+        overflow-x: hidden;
         &__tit {
             grid-area: tit;
         }
@@ -219,11 +221,17 @@
         &__vi1 {
             grid-area: vi1;
             margin: 2rem;
+            max-height: 80vh;
+            max-width: 80vw;
+            overflow: hidden;
         }
     
         &__vi2 {
             grid-area: vi2;
             margin: 2rem;
+            max-height: 80vh;
+            max-width: 80vw;
+            overflow: hidden;
         }
     }
 }
@@ -386,6 +394,16 @@
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: auto;
+    @include tablet  {
+        display: grid;
+        grid-template-columns: 98%;
+        grid-template-rows: auto;
+    }
+    @include movil  {
+        display: grid;
+        grid-template-columns: 98%;
+        grid-template-rows: auto;
+    }
 }
 @each $piscina in img1, img2, img3, img4, img5, img6, img7, img8, img9 {
     .#{$piscina}-fibra {
@@ -403,6 +421,7 @@
         box-shadow: 2px 20px 20px 2px rgba(42, 155, 208, 0.557);
     }
 }
+
 .card-title {
     color: blue;
 }
@@ -462,6 +481,7 @@
         align-content: stretch;
         gap: 35px;
         padding-top: 2rem;
+        overflow-x: hidden;
         &__tarjeta1 {
             @include estilo;
         }
@@ -555,5 +575,17 @@
         &__img:hover {
             @include hover;
         }
+    }
+    @include tablet  {
+        display: grid;
+        grid-template-columns: 98%;
+        grid-template-rows: auto;
+        overflow-x: hidden;
+    }
+    @include movil  {
+        display: grid;
+        grid-template-columns: 98%;
+        grid-template-rows: auto;
+        overflow-x: hidden;
     }
 }
