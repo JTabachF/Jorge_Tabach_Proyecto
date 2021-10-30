@@ -220,14 +220,15 @@ body, footer {
   font-weight: 800;
 }
 
-.tituloInicial:hover {
-  color: #ef00e7;
-  overflow: hidden;
-}
-
 .colorGeneral {
   background-color: #3498db !important;
   opacity: 0.9;
+}
+
+/*NAV*/
+.text-white:hover {
+  color: #a4c9f9 !important;
+  font-size: 1.1rem;
 }
 
 /*SECCIÓN CAROUESEL*/

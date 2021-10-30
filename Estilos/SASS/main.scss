@@ -11,11 +11,6 @@
     color: blue;
     font-size: 2rem;
     font-weight: 800;
-
-    &:hover {
-        color: rgb(239, 0, 231);
-        overflow: hidden;
-    }
 }
 
 .colorGeneral {
@@ -24,6 +19,13 @@
 }
 
 //INDEX
+
+/*NAV*/
+
+.text-white:hover {
+    color: rgb(164, 201, 249)!important;
+    font-size: 1.1rem;
+}
 
 /*SECCIÓN CAROUESEL*/
 .secPrincipal {
