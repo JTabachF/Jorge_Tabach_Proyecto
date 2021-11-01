@@ -332,9 +332,10 @@
     overflow-x: hidden;
     @include tablet  {
         display: grid;
-        grid-template-columns: 98%;
+        grid-template-columns: 55%;
         grid-template-rows: auto;
         overflow-x: hidden;
+        justify-content: center;
     }
     @include movil  {
         display: grid;
@@ -515,14 +516,16 @@
     }
     @include tablet  {
         display: grid;
-        grid-template-columns: 98%;
+        grid-template-columns: 60%;
         grid-template-rows: auto;
         overflow-x: hidden;
+        justify-content: center;
     }
     @include movil  {
         display: grid;
-        grid-template-columns: 98%;
+        grid-template-columns: 90%;
         grid-template-rows: auto;
         overflow-x: hidden;
+        justify-content: center;
     }
 }

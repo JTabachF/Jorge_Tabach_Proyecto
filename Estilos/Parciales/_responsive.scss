@@ -44,7 +44,7 @@ $font-lock-max: 1024px !default;
 }
 
 @mixin menor {
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: 768px) {
         @content;
         
     }  
