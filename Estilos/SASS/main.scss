@@ -11,6 +11,9 @@
     color: blue;
     font-size: 2rem;
     font-weight: 800;
+    @include menor {
+        margin-top: ($margenTit+1.7rem);
+    }
 }
 
 .colorGeneral {
@@ -31,7 +34,6 @@
 .secPrincipal {
     max-height: 100vh;
     overflow: hidden;
-    object-fit: cover;
     overflow-x: hidden;
     @include tablet  {
         margin-top: 2vh;

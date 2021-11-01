@@ -221,6 +221,12 @@ body, footer {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 760px) {
+  .tituloInicial {
+    margin-top: 7.4rem;
+  }
+}
+
 .colorGeneral {
   background-color: #3498db !important;
   opacity: 0.9;
@@ -237,8 +243,6 @@ body, footer {
 .secPrincipal {
   max-height: 100vh;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
   overflow-x: hidden;
 }
 
