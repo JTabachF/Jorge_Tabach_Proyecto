@@ -90,6 +90,7 @@ body, footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow-x: hidden;
   }
 }
 
@@ -223,6 +224,7 @@ body, footer {
 .colorGeneral {
   background-color: #3498db !important;
   opacity: 0.9;
+  color: white;
 }
 
 /*NAV*/
@@ -275,6 +277,7 @@ body, footer {
             animation-name: none;
     line-height: 1rem;
     padding: 2px 0px;
+    overflow-x: hidden;
   }
 }
 
@@ -283,6 +286,7 @@ body, footer {
           box-shadow: 0 2px 6px 2px rgba(2, 2, 255, 0.728);
   margin-right: 0.5vw;
   height: 240px;
+  background-color: #f6fdff;
 }
 
 .secMedia__img {
@@ -364,6 +368,8 @@ body, footer {
       justify-self: stretch;
   margin: auto 10px;
   padding-bottom: 0px;
+  -webkit-box-shadow: 2px 4px 10px 8px black;
+          box-shadow: 2px 4px 10px 8px black;
 }
 
 .secFinal__tab__estilo {
@@ -458,6 +464,7 @@ body, footer {
         justify-self: stretch;
     margin: 0px;
     padding-bottom: 0px;
+    overflow-x: hidden;
   }
   .secFinal__tab__estilo {
     padding: 0.1rem;
@@ -479,7 +486,7 @@ body, footer {
 /* PESTAÑA PROVEEDORES*/
 .provSet1 {
   opacity: 0.9;
-  background-color: #e8f8fe;
+  background-color: #f6fdff;
   overflow-x: hidden;
   -webkit-box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
           box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
@@ -541,7 +548,7 @@ body, footer {
 
 .provSet2 {
   opacity: 0.9;
-  background-color: #e8f8fe;
+  background-color: #f6fdff;
   overflow-x: hidden;
   -webkit-box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
           box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
@@ -603,7 +610,7 @@ body, footer {
 
 .provSet3 {
   opacity: 0.9;
-  background-color: #e8f8fe;
+  background-color: #f6fdff;
   overflow-x: hidden;
   -webkit-box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
           box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
@@ -991,11 +998,10 @@ body, footer {
   color: blue;
 }
 
-.card-title:hover {
-  color: #ef00e7;
-  overflow: hidden;
-}
-
+/*.card-title:hover {
+    font-size: 1.5rem;
+    overflow: hidden;
+}*/
 /*PESTAÑA CLIENTES*/
 .gridClientes {
   display: -ms-grid;
@@ -1226,6 +1232,7 @@ body, footer {
   border: 1px solid black;
   -webkit-box-shadow: 0 2px 6px 2px black;
           box-shadow: 0 2px 6px 2px black;
+  background-color: #f6fdff;
 }
 
 .secColab__tarjeta1__img {
@@ -1246,13 +1253,8 @@ body, footer {
 }
 
 .secColab__tarjeta1__img:hover {
-  border-radius: 10%;
-  -webkit-box-shadow: 0px 0px 15px 15px #89ddf4;
-          box-shadow: 0px 0px 15px 15px #89ddf4;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-box-shadow: 0px 0px 15px 15px #d9eef4;
+          box-shadow: 0px 0px 15px 15px #d9eef4;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -1262,6 +1264,7 @@ body, footer {
   border: 1px solid black;
   -webkit-box-shadow: 0 2px 6px 2px black;
           box-shadow: 0 2px 6px 2px black;
+  background-color: #f6fdff;
 }
 
 .secColab__tarjeta2__img {
@@ -1282,13 +1285,8 @@ body, footer {
 }
 
 .secColab__tarjeta2__img:hover {
-  border-radius: 10%;
-  -webkit-box-shadow: 0px 0px 15px 15px #89ddf4;
-          box-shadow: 0px 0px 15px 15px #89ddf4;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-box-shadow: 0px 0px 15px 15px #d9eef4;
+          box-shadow: 0px 0px 15px 15px #d9eef4;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -1298,6 +1296,7 @@ body, footer {
   border: 1px solid black;
   -webkit-box-shadow: 0 2px 6px 2px black;
           box-shadow: 0 2px 6px 2px black;
+  background-color: #f6fdff;
 }
 
 .secColab__tarjeta3__img {
@@ -1318,13 +1317,8 @@ body, footer {
 }
 
 .secColab__tarjeta3__img:hover {
-  border-radius: 10%;
-  -webkit-box-shadow: 0px 0px 15px 15px #89ddf4;
-          box-shadow: 0px 0px 15px 15px #89ddf4;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-box-shadow: 0px 0px 15px 15px #d9eef4;
+          box-shadow: 0px 0px 15px 15px #d9eef4;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -1334,6 +1328,7 @@ body, footer {
   border: 1px solid black;
   -webkit-box-shadow: 0 2px 6px 2px black;
           box-shadow: 0 2px 6px 2px black;
+  background-color: #f6fdff;
 }
 
 .secColab__tarjeta4__img {
@@ -1354,13 +1349,8 @@ body, footer {
 }
 
 .secColab__tarjeta4__img:hover {
-  border-radius: 10%;
-  -webkit-box-shadow: 0px 0px 15px 15px #89ddf4;
-          box-shadow: 0px 0px 15px 15px #89ddf4;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-box-shadow: 0px 0px 15px 15px #d9eef4;
+          box-shadow: 0px 0px 15px 15px #d9eef4;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }

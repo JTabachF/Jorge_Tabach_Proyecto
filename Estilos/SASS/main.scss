@@ -16,6 +16,7 @@
 .colorGeneral {
     background-color: $azulPrincipal!important;
     opacity: 0.9;
+    color: white;
 }
 
 //INDEX
@@ -55,6 +56,7 @@
         animation-name: none;
         line-height: 1rem;
         padding: 2px 0px;
+        overflow-x: hidden;
     }
 }
 // SECCIÓN TARJETAS
@@ -62,6 +64,7 @@
     box-shadow: 0 2px 6px 2px rgba(2, 2, 255, 0.728);
     margin-right: 0.5vw;
     height: 240px;
+    background-color: #f6fdff;
     &__img {
         max-height: 64px;
         max-width: 64px;
@@ -128,6 +131,7 @@
         justify-self: stretch;
         margin: auto 10px;
         padding-bottom: 0px;
+        box-shadow: 2px 4px 10px 8px rgb(0, 0, 0);
         &__estilo {
             padding: 1rem;
         }
@@ -200,6 +204,7 @@
             justify-self: stretch;
             margin: 0px;
             padding-bottom: 0px;
+            overflow-x: hidden;
             &__estilo {
                 padding: 0.1rem;
             }
@@ -234,7 +239,7 @@
 }
 @mixin provee {
     opacity: 0.9;
-    background-color: rgb(232, 248, 254);
+    background-color: #f6fdff;
     overflow-x: hidden;
     box-shadow: 5px 5px 20px 5px rgba(31, 163, 223, 0.811);
 }
@@ -446,10 +451,10 @@
 .card-title {
     color: blue;
 }
-.card-title:hover {
-    color: rgb(239, 0, 231);
+/*.card-title:hover {
+    font-size: 1.5rem;
     overflow: hidden;
-}
+}*/
 /*PESTAÑA CLIENTES*/
 @mixin estilo {
     animation-name: resaltar;
@@ -536,10 +541,7 @@
     margin: 3rem 0rem;
 }
 @mixin hover {
-    border-radius:10%;
-    box-shadow: 0px 0px 15px 15px #89ddf4;
-    transform: rotate(360deg);
-    transform: rotateY(180deg);
+    box-shadow: 0px 0px 15px 15px #d9eef4;
     transform-style: preserve-3d;
 }
 
@@ -555,6 +557,7 @@
         margin-top: $margenTit;
         border: 1px solid black;
         box-shadow: 0 2px 6px 2px black;
+        background-color: #f6fdff;
         &__img {
             @include colaboradores;
         }
@@ -567,6 +570,7 @@
         margin-top: $margenTit;
         border: 1px solid black;
         box-shadow: 0 2px 6px 2px black;
+        background-color: #f6fdff;
         &__img {
             @include colaboradores;
         }
@@ -579,6 +583,7 @@
         margin-top: $margenTit;
         border: 1px solid black;
         box-shadow: 0 2px 6px 2px black;
+        background-color: #f6fdff;
         &__img {
             @include colaboradores;
         }
@@ -590,6 +595,7 @@
         margin-top: $margenTit;
         border: 1px solid black;
         box-shadow: 0 2px 6px 2px black;
+        background-color: #f6fdff;
         &__img {
             @include colaboradores;
         }
