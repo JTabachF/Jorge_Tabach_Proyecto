@@ -22,7 +22,6 @@
 //INDEX
 
 /*NAV*/
-
 .text-white:hover {
     color: rgb(164, 201, 249)!important;
     font-size: 1.1rem;
@@ -303,94 +302,6 @@
         }
     }
 }
-/*
-@mixin proveedores {
-    display: flex;
-    font-family: 'Glory', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    font-style: oblique;
-    justify-items: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0rem;
-}
-@mixin estiloP {
-    border-style: double;
-    padding: 40px;
-    margin-bottom: 0px;
-    box-shadow: 10px 5px 10px 10px rgba(85, 201, 255, 0.811);
-    border: 9px solid rgb(22, 37, 206);
-    border-style:double;
-}
-
-@mixin animacionProv {
-    height: 8rem;
-    width: 22rem;
-    animation-name: resaltar;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1s;
-}
-.prov1 {
-    @include proveedores;
-    justify-content: flex-end;
-    &__estilo {
-        @include estiloP();
-        &__listProv {
-            color: navy;
-            list-style-position: inside;
-        }
-        &__imgProv {
-            @include animacionProv();
-        }
-    }
-    @include menor {
-        @include proveedores;
-        justify-content: flex-start;
-    }
-}
-
-.prov2 {
-    @include proveedores;
-    justify-content: flex-start;
-    &__estilo {
-        @include estiloP();
-
-        &__listProv {
-            color: navy;
-            list-style-position: inside;
-        }
-
-        &__imgProv {
-            @include animacionProv();
-        }
-    }
-}
-
-.prov3 {
-    @include proveedores;
-    justify-content: flex-end;
-
-    &__estilo {
-        @include estiloP();
-        &__listProv {
-            color: navy;
-            list-style-position: inside;
-        }
-
-        &__imgProv {
-            @include animacionProv();
-        }
-    }
-    @include menor {
-        @include proveedores;
-        justify-content: flex-start;
-    }
-}*/
 
 /*PESTAÑA CONTACTO*/
 .contactoIMG {
@@ -410,7 +321,6 @@
         color: blue;
     }
 }
-
 
 /*PESTAÑA GALERÍA*/
 .galeria {
@@ -451,10 +361,7 @@
 .card-title {
     color: blue;
 }
-/*.card-title:hover {
-    font-size: 1.5rem;
-    overflow: hidden;
-}*/
+
 /*PESTAÑA CLIENTES*/
 @mixin estilo {
     animation-name: resaltar;
